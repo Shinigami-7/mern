@@ -7,20 +7,35 @@
     <style>
         h1{
             font-size: 50px;
-            text-shadow: 20px 30px 5px black, 35px 60px 5px red, 50px 90px 5px green;
+            color:darkorange;
+            text-shadow: 20px 30px 5px rgb(234, 150, 47), 35px 60px 5px rgb(255, 0, 0), 50px 90px 5px rgb(0, 255, 0);
+        }
+        .container{
+            background-color: rgb(190, 0, 0);
+            display: flex;
+            
+            justify-content: space-around;
+            /* flex-direction: row; */
+            align-items: center;
         }
         #box1{
-            background-color: aquamarine;
+            position: relative;
+            left: 8%;
+            align-self:flex-end;
+            /* justify-items: center; */
 
         }
         #box2{
-            margin-top: 100px;
-            background-color: cadetblue;
+            align-self:flex-end;
+            /* margin-top: 100px; */
+            /* margin-left: 100px; */
+            /* background-color: cadetblue; */
         }
         img{
             width: 200px;
             height: 200px;
-            box-shadow: 20px 30px 5px black, 35px 60px 5px red, 60px 90px 5px green;
+            border-image:repeat;
+            box-shadow: 20px 30px 5px rgb(129, 119, 119), 35px 60px 5px rgb(214, 106, 106), 60px 90px 5px rgb(135, 226, 135);
         }
     </style>
 </head>
