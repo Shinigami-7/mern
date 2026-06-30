@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .container {
+            height: 100vh;
+            width: 100vw;
+            background-color: bisque;
+            box-sizing: border-box;
+            position: relative;
+        }
+
+        .box1 {
+            height: 50px;
+            width: 200px;
+            background-color: aqua;
+            /* margin: 20px; */
+            border: 1px solid black;
+            border-radius: 10px;
+            position: relative;
+            top: 20px;
+            left: 20px;
+            box-shadow: 10px 15px 20px 2px yellow, 20px 25px 20px 2px blue;
+            /* * @keyframes duration | easing-function | delay |
+iteration-count | direction | fill-mode | play-state | name  */
+            animation: 4s linear 1s infinite alternate forwards running rightMovement;
+
+        }
+
+        @keyframes rightMovement {
+            form {
+                left: 0px;
+                top: 0px;
+            }
+
+            to {
+                left: 85%;
+                top: 0px;
+            }
+        }
+
+        .box2 {
+            /* height: 50px;
+            width: 200px; */
+            background-color: aqua;
+            border: 1px solid black;
+            box-shadow: 10px 15px 20px 2px yellow, 20px 25px 20px 2px blue;
+            border-radius: 10px;
+            position: relative;
+            display:inline;
+            top: 85%;
+            left: -20px;
+            animation: 4s linear 1s infinite alternate-reverse none running leftMovement;
+        }
+
+        @keyframes leftMovement {
+            form {
+                left: 0%;
+                top: 85%;
+            }
+
+            to {
+                left: 60%;
+                top: 85%;
+            }
+        }
+
+        .circle {
+            height: 100px;
+            width: 100px;
+            background-color: gold;
+            border: 1px solid black;
+            border-radius: 50%;
+            position: relative;
+            box-shadow: 10px 15px 20px 2px yellow, 20px 25px 20px 2px blue;
+            top: 30%;
+            left: 20px;
+            animation: 10s ease-in-out infinite running circleMovement;
+
+
+        }
+
+        @keyframes circleMovement {
+            0% {
+                top: -10%;
+                left: 5%;
+            }
+
+            22% {
+                top: 70%;
+                left: 90%;
+            }
+
+            44% {
+                top: -10%;
+                left: 90%;
+            }
+
+            88% {
+                top: 70%;
+                left: 5%;
+            }
+
+            100% {
+                top: -10%;
+                left: 5%;
+            }
+
+        }
+        video{
+            rotate: 90deg ;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box1">This is Shinigami</div>
+        <div class="box2">
+            <video width="720" height="540" controls style="display:block;">
+                <source src="video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="circle"></div>
+    </div>
+</body>
+
+</html>
