@@ -28,6 +28,15 @@ body{
     grid-template-rows: repeat(2, 1fr);
     gap: 15px;
 }
+@media (max-width:640px){
+    .grids{
+        display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* grid-template-rows: repeat(2, 1fr); */
+    gap: 15px;
+    }
+
+}
 
 
 .card{
