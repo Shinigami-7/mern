@@ -1,0 +1,110 @@
+*{   
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  height: 100vh;
+  width: 100vw;
+  background-color:beige;
+}
+
+.container{
+
+  height: 100%;
+  width: 80%;
+  margin: auto;
+  /* padding: 10px; */
+}
+.header{
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}
+.grids{
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 15px;
+}
+
+
+.card{
+    background-color: rgba(245, 245, 225, 0.285);
+    height: 100%;
+    width: 100%;
+    /* width: 300px; */
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 10px 5px 10px gray ;
+}
+
+.images{
+    height: 200px;
+    width: 200px;
+    margin: auto;
+    background-size: contain;
+    background-image:url('5.png');
+    /* background-repeat: no-repeat; */
+    /* background-position: center; */
+    transition: all .3s linear;
+    overflow:hidden;
+}
+.images:hover{
+    transform: scale(1.5) translate(1px,-30px);
+    /* transform: translate(20px,30px); */
+}
+.product_detail{
+    padding: 10px;
+}
+.desc h3{
+    padding-bottom: 5px;
+    /* color: rgb(255, 255, 255); */
+}
+.desc p{
+    padding-bottom: 15px;
+
+}
+
+.author{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.info{
+    width: 100%;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    /* justify-content: space-evenly; */
+}
+.author_image{
+    height: 25px;
+    width: 25px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: antiquewhite;
+    background-image: url('5.png');
+    background-size:contain;
+    
+}
+.author_info{
+    display: flex;
+    flex-direction: column;
+}
+.author_info .name{
+    color: blue;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.tags{
+    border: 1px solid black;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-radius: 5px;
+}
