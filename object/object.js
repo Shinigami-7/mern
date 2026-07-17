@@ -82,8 +82,9 @@ let arrflt= arr.filter((num)=>{
     address : "kapan"
  };
  for (let key in obj1){
-    console.log(key," ",obj1[key]);
+    console.log(key,":",obj1[key]);
  }
+ console.log(obj1.fname);
 
  let fname = "Reezan Shrestha";
  for(val of fname){
